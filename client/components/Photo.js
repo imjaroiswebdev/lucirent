@@ -4,7 +4,7 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 
 class Photo extends React.Component {
 	render() {
-		const { post, index, comments } = this.props;
+		const { post, index, comments, increment } = this.props;
 
 		return (
 			<figure className="grid-figure">
@@ -17,21 +17,23 @@ class Photo extends React.Component {
 						/>
 					</Link>
 
-					<CSSTransitionGroup transitionName="like" transitionEnterTimeout={500}transitionLeaveTimeout={500}>
-						<span key={post.likes} className="likes-heart">{post.likes}</span>
-					</CSSTransitionGroup>
+          <CSSTransitionGroup transitionName="like" transitionEnterTimeout={500} transitionLeaveTimeout={500}>
+            <span key={post.likes} className="likes-heart">{post.likes}</span>
+          </CSSTransitionGroup>
 				</div>
 
 				<figcaption>
 					<p>{post.caption}</p>
 					<div className="control-buttons">
-						<button className="likes">&hearts; {post.likes}</button>
+						<button
+							onClick={increment.bind(null, index)}
+							className="likes"
+						>&hearts; {post.likes}</button>
 						<Link className="button" to={`/view/${post.code}`}>
 							<span className="comment-count">
-								<span className="speech-bubble"> </span>
+								<span className="speech-bubble"></span>
 								{ comments[post.code] ? comments[post.code].length : 0 }
-							</span>
-							
+							</span>							
 						</Link>
 					</div>
 				</figcaption>

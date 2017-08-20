@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Single = () => {
-	return (
-		<div>
-			Single Post
-		</div>
-	)
+class Single extends React.Component {
+	render() {
+		return (
+			<div>
+				Single Post
+			</div>
+		)		
+	}
 }
 
 export default Single;
