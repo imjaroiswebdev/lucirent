@@ -4,10 +4,10 @@ import Photo from './Photo';
 class PhotoGrid extends React.Component {
 	render() {
 		return (
-			<div>
-				<pre>
-					{JSON.stringify(this.props.posts, null, ' ')}
-				</pre>
+			<div className="photo-grid">
+					{
+						this.props.posts.map((post, index) => <Photo {...this.props} key={index} index={index} post={post} />)
+					}
 			</div>
 		)
 	}
