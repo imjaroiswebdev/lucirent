@@ -6,7 +6,9 @@ class Main extends Component {
 		return (
 			<div>
 				<h1>
-					<Link to="/">Lucirent</Link>
+					<Link to="/">
+						<img src="assets/images/lucirent-logo.svg" alt="Lucirent Logo"/>
+					</Link>
 				</h1>
 				{ React.cloneElement(this.props.children, this.props) }
 			</div>
