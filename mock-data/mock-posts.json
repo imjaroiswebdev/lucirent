@@ -1,4 +1,4 @@
-const posts = [
+[
   {
     "code": "5ba6i17x191",
     "caption": "Luz y flores! excelente combinación... #santiagocentro #santiagodechile #LaSerena #Iquique #Antofagasta #Valparaiso #PuertoMontt #rancagua #temuco #viñadelmar #sandiego #lascondes #chile #vitacura #vivachile",
@@ -139,7 +139,4 @@ const posts = [
     "id": "1572831448695368358_4890080986",
     "display_src": "https://scontent.cdninstagram.com/t51.2885-15/e35/20481933_129281451021045_4607817962290675712_n.jpg"
   }
-];
-
-
-export default posts;
+]

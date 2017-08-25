@@ -1,4 +1,4 @@
-const comments = {
+{
   "5ba6i17x191": [
     {
       "text": "Voluptas qui sed laudantium minus est iusto.",
@@ -547,6 +547,4 @@ const comments = {
       "user": "Carmen57"
     }
   ]
-};
-
-export default comments;
+}
